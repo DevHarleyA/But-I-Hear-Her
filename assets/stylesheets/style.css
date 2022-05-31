@@ -2,6 +2,7 @@ body {
   background: url('../images/DSCN3781.JPG');
   background-repeat: no-repeat;
   background-size: 100%;
+  /* 100vh is 100% viewable height */
 }
 
 /* Clearfix Hack */
