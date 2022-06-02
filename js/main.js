@@ -1,9 +1,12 @@
-// code so background changes on refresh
+window.addEventListener('load', changeBG)
 
-// create an array with the different image srcs
+const desktopBg = ['../images/desktop-bg/desktop1.jpg', '../assets/images/desktop-bg/desktop2.png','../assets/images/desktop-bg/desktop3.png']
 
-// declare random number variable: math.floor(math.random() * 6)
+const mobileBg = ['assets/images/mobile-bg/mobile1.jpg', 'assets/images/mobile-bg/mobile2.jpg', 'assets/images/mobile-bg/mobile3.jpg', 'assets/images/mobile-bg/mobile4.jpg', 'assets/images/mobile-bg/mobile5.png']
 
-// input array[r] for source
-
-// document queryselector html style background url
+function changeBG() {
+    let random = Math.floor(Math.random() * 4)
+    //let link = url(`${desktopBg[random]}`)
+    console.log(desktopBg[random])
+    
+}

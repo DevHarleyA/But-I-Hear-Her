@@ -1,11 +1,14 @@
-body {
-  background: url('../images/DSCN3781.JPG');
+/* html {
+  background: url('../images/desktop-bg/desktop3.png');
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
-  /* 100vh is 100% viewable height */
-}
+} */
 
-/* Clearfix Hack */
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
 
 .clearfix:after {
   content: ".";
