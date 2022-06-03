@@ -1,12 +1,9 @@
-window.addEventListener('load', changeBG)
+document.addEventListener('click', function(e){
 
-const desktopBg = ['../images/desktop-bg/desktop1.jpg', '../assets/images/desktop-bg/desktop2.png','../assets/images/desktop-bg/desktop3.png']
-
-const mobileBg = ['assets/images/mobile-bg/mobile1.jpg', 'assets/images/mobile-bg/mobile2.jpg', 'assets/images/mobile-bg/mobile3.jpg', 'assets/images/mobile-bg/mobile4.jpg', 'assets/images/mobile-bg/mobile5.png']
-
-function changeBG() {
-    let random = Math.floor(Math.random() * 4)
-    //let link = url(`${desktopBg[random]}`)
-    console.log(desktopBg[random])
-    
-}
+    if(e.target.classList.contains("gallery-item")){
+        const src = e.target.getAttribute('src')
+        document.querySelector(".modal-img").src = src
+        const myModal = new bootstrap.Modal(document.getElementById('gallery-modal'))
+        myModal.show()
+    }
+})

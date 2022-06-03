@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,25 @@
 	<title>But I Hear Her</title>
 	<!-- Don't add to other pages until nav bar is done -->
 	<script src="https://kit.fontawesome.com/265ed8ed5a.js" crossorigin="anonymous"></script>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/stylesheets/style.css">
 </head>
+
 <body>
 	<!-- navigation bar -->
-	<nav class="navbar navbar-expand-lg nav-pills justify-content-end fixed-top display-4">
+	<nav class="navbar navbar-expand-lg nav-pills justify-content-end display-4">
 		<div class="container">
 			<a href="#" class="navbar-brand">But I Hear Her</a>
 
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-				<span class="navbar-toggler-icon"></span>
+				<span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
 			</button>
 
 			<div class="collapse navbar-collapse" id="navmenu">
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#">Home</a>
+						<a class="nav-link" aria-current="page" href="index.html">Home</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
@@ -49,9 +52,58 @@
 		</div>
 	</nav>
 
+	<!-- gallery code -->
+	<section class="gallery min-vh-100 text-center">
+		<div class="container-lg">
+			<div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+				<div class="col">
+					<img src="assets/images/gallery/gal1.png" class="gallery-item" alt="gallery">
+				</div>
+				<div class="col">
+					<img src="assets/images/gallery/gal2.png" class="gallery-item" alt="gallery">
+				</div>
+				<div class="col">
+					<img src="assets/images/gallery/gal3.png" class="gallery-item" alt="gallery">
+				</div>
+				<div class="col">
+					<img src="assets/images/gallery/gal4.png" class="gallery-item" alt="gallery">
+				</div>
+				<div class="col">
+					<img src="assets/images/gallery/gal5.png" class="gallery-item" alt="gallery">
+				</div>
+				<div class="col">
+					<img src="assets/images/gallery/gal6.png" class="gallery-item" alt="gallery">
+				</div>
+				<div class="col">
+					<img src="assets/images/gallery/gal7.png" class="gallery-item" alt="gallery">
+				</div>
+				<div class="col">
+					<img src="assets/images/gallery/gal8.png" class="gallery-item" alt="gallery">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Modal -->
+	<div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<img src="assets/images/gallery/gal1.png" class="modal-img" alt="modal-img">
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- for the link to share your story, consider centering that in a container. wrap in anchor tag -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
