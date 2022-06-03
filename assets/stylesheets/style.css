@@ -26,3 +26,7 @@ body::before {
 #gallery-modal, .modal-img {
   width: 100%
 }
+
+.noLine {
+  text-decoration: none;
+}
