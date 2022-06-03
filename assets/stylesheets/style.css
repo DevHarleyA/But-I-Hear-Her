@@ -1,8 +1,8 @@
-/* html {
+.index {
   background: url('../images/desktop-bg/desktop3.png');
   background-size: cover;
   background-repeat: no-repeat;
-} */
+}
 
 body::before {
   display: block;
